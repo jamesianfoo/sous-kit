@@ -13,21 +13,19 @@
   text-align: left; /* buttons centre text. put it back. */
 }
 
-button.tile {
+.tile:where(button) {
   cursor: pointer;
 }
 
-button.tile:hover {
+.tile:where(button):hover {
   border-color: var(--alias-color-accent);
 }
 
-button.title:disabled{
+.tile:where(button):disabled {
   cursor: not-allowed;
-  opacity: 0.5;
+  color: var(--alias-color-text-disabled);
   border-color: var(--alias-color-border);
 }
-
-
 
 /* focus-visible, not focus: keyboard users get the outline border ring */
 .tile:focus-visible {
