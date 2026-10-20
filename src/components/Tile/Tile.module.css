@@ -1,0 +1,52 @@
+.tile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--global-space-1);
+  width: 100%;
+  min-height: var(--global-size-target-min); /* WCAG 2.5.8 target size, as a token */
+  padding: var(--component-tile-padding);
+  background: var(--component-tile-bg);
+  border: var(--global-border-width) solid var(--alias-color-border);
+  border-radius: var(--component-tile-radius);
+  color: #fff; /* text colour for tiles */
+  font: inherit; /* buttons reset font. put it back. */
+  text-align: left; /* buttons centre text. put it back. */
+}
+
+button.tile {
+  cursor: pointer;
+}
+
+button.tile:hover {
+  border-color: var(--alias-color-accent);
+}
+
+button.title:disabled{
+  cursor: not-allowed;
+  opacity: 0.5;
+  border-color: var(--alias-color-border);
+}
+
+
+
+/* focus-visible, not focus: keyboard users get the outline border ring */
+.tile:focus-visible {
+  outline: var(--global-border-focus) solid var(--alias-color-accent);
+  outline-offset: var(--global-space-1);
+}
+
+.title {
+  font-size: var(--global-font-size-md);
+  font-weight: 600;
+}
+
+.meta {
+  font-size: var(--global-font-size-sm);
+  color: var(--alias-color-text-muted);
+}
+
+/* status changes colour AND the meta text already says "1 missing".
+   colour is never the only signal. WCAG 1.4.1 */
+.tile[data-status="warn"] .meta {
+  color: var(--alias-color-status-warn);
+}

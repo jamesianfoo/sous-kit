@@ -1,0 +1,44 @@
+{
+  "global": {
+    "color": {
+      "navy-900": "#162437", // primary text colour
+      "green-700": "#2D5A3D", // primary accent colour
+      "cream-100": "#F7F3EC", // primary background colour
+      "gold-500": "#C4965A", // secondary accent colour
+      "amber-600": "#B8651C", // warning accent colour
+      "slate-600": "#55607A", // secondary text colour
+      "sand-200": "#E3E1DA", // secondary background colour
+      "white": "#FFFFFF" // white
+    },
+    "space": { "1": "4px", "2": "8px", "3": "12px", "4": "16px", "6": "24px", "8": "32px" }, // spacing scale
+    "radius": { "sm": "8px", "md": "14px", "pill": "999px" }, // border radius scale
+    "font": { "size-sm": "13px", "size-md": "15px", "size-lg": "18px", "size-xl": "24px" }, // font size scale
+    "border": { "width": "1px", "focus": "2px" }, // border width scale
+    "size": { "target-min": "24px" } // minimum target size for touch and click targets
+  },
+  "alias": {
+    "color": {
+      "surface": "{global.color.cream-100}", // background colour for surfaces
+      "surface-raised": "{global.color.white}", // background colour for raised surfaces
+      "text": "{global.color.navy-900}", // primary text colour
+      "text-muted": "{global.color.slate-600}", // secondary text colour
+      "border": "{global.color.sand-200}", // border colour for surfaces
+      "accent": "{global.color.green-700}", // primary accent colour
+      "accent-contrast": "{global.color.white}",  // contrast colour for primary accent
+      "status-ok": "{global.color.green-700}", // colour for status "ok"
+      "status-warn": "{global.color.amber-600}" // colour for status "warn"
+    }
+  },
+  "component": {
+    "tile": {
+      "bg": "{alias.color.surface-raised}",  // background colour for tiles
+      "radius": "{global.radius.md}", // border radius for tiles
+      "padding": "{global.space.4}" // padding for tiles
+    },
+    "pill": {
+      "radius": "{global.radius.pill}", // border radius for pills
+      "padding-x": "{global.space.3}", // horizontal padding for pills
+      "padding-y": "{global.space.1}" // vertical padding for pills
+    }
+  }
+}

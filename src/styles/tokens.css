@@ -1,0 +1,42 @@
+/* generated from tokens/tokens.json. do not edit. */
+:root {
+  --global-color-navy-900: #162437;
+  --global-color-green-700: #F7F3EC;
+  --global-color-cream-100: #F7F3EC;
+  --global-color-gold-500: #C4965A;
+  --global-color-amber-600: #B8651C;
+  --global-color-slate-600: #55607A;
+  --global-color-sand-200: #E3E1DA;
+  --global-color-white: #FFFFFF;
+  --global-space-1: 4px;
+  --global-space-2: 8px;
+  --global-space-3: 12px;
+  --global-space-4: 16px;
+  --global-space-6: 24px;
+  --global-space-8: 32px;
+  --global-radius-sm: 8px;
+  --global-radius-md: 14px;
+  --global-radius-pill: 999px;
+  --global-font-size-sm: 13px;
+  --global-font-size-md: 15px;
+  --global-font-size-lg: 18px;
+  --global-font-size-xl: 24px;
+  --global-border-width: 1px;
+  --global-border-focus: 2px;
+  --global-size-target-min: 24px;
+  --alias-color-surface: var(--global-color-cream-100);
+  --alias-color-surface-raised: var(--global-color-white);
+  --alias-color-text: var(--global-color-navy-900);
+  --alias-color-text-muted: var(--global-color-slate-600);
+  --alias-color-border: var(--global-color-sand-200);
+  --alias-color-accent: var(--global-color-green-700);
+  --alias-color-accent-contrast: var(--global-color-white);
+  --alias-color-status-ok: var(--global-color-green-700);
+  --alias-color-status-warn: var(--global-color-amber-600);
+  --component-tile-bg: var(--alias-color-surface-raised);
+  --component-tile-radius: var(--global-radius-md);
+  --component-tile-padding: var(--global-space-4);
+  --component-pill-radius: var(--global-radius-pill);
+  --component-pill-padding-x: var(--global-space-3);
+  --component-pill-padding-y: var(--global-space-1);
+}
