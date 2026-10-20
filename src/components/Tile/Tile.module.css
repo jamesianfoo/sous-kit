@@ -8,7 +8,7 @@
   background: var(--component-tile-bg);
   border: var(--global-border-width) solid var(--alias-color-border);
   border-radius: var(--component-tile-radius);
-  color: #fff; /* text colour for tiles */
+  color: var(--alias-color-text); /* text colour for tiles */
   font: inherit; /* buttons reset font. put it back. */
   text-align: left; /* buttons centre text. put it back. */
 }
