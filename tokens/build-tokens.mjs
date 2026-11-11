@@ -23,7 +23,7 @@ walk(tokens, []);
 mkdirSync('src/styles', { recursive: true });
 writeFileSync(
   'src/styles/tokens.css',
-  `/* generated from tokens/tokens.json. do not edit. */\n:root {\n${lines.join('\n')}\n}\n`
+  `/* generated from tokens/tokens.jsonc. do not edit. */\n:root {\n${lines.join('\n')}\n}\n`
 );
 console.log(`wrote ${lines.length} tokens to src/styles/tokens.css`);
 

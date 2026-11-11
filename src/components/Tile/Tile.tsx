@@ -6,6 +6,7 @@ type TileProps = {
     meta?: string; // "20 min · 1 missing". optional
     status?: 'ok' | 'warn'; // drives the meta colour via a data attribute
     
+    disabled?: boolean; // only applies when the Tile is a button
     onSelect?: () => void; // if present, the Tile is a button
 };
 
@@ -26,6 +27,7 @@ if  (onSelect) {
             className={styles.tile}
             data-status={status} // CSS hooks onto this, no extra class juggling
             
+            disabled={disabled}
             onClick={onSelect}
         >{content}
         </button>
